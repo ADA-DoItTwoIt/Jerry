@@ -14,6 +14,7 @@
 		8606509D29C5734100123CAC /* dailyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8606509C29C5734100123CAC /* dailyAppTests.swift */; };
 		860650A729C5734100123CAC /* dailyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860650A629C5734100123CAC /* dailyAppUITests.swift */; };
 		860650A929C5734100123CAC /* dailyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860650A829C5734100123CAC /* dailyAppUITestsLaunchTests.swift */; };
+		860650B629C708EA00123CAC /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860650B529C708EA00123CAC /* ModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		860650A229C5734100123CAC /* dailyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dailyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		860650A629C5734100123CAC /* dailyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailyAppUITests.swift; sourceTree = "<group>"; };
 		860650A829C5734100123CAC /* dailyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		860650B529C708EA00123CAC /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				8606508B29C5733F00123CAC /* dailyAppApp.swift */,
 				8606508D29C5733F00123CAC /* ContentView.swift */,
+				860650B529C708EA00123CAC /* ModalView.swift */,
 				8606508F29C5734000123CAC /* Assets.xcassets */,
 				8606509129C5734000123CAC /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				860650B629C708EA00123CAC /* ModalView.swift in Sources */,
 				8606508E29C5733F00123CAC /* ContentView.swift in Sources */,
 				8606508C29C5733F00123CAC /* dailyAppApp.swift in Sources */,
 			);
