@@ -14,18 +14,56 @@ struct ModalView: View {
 //    @Binding var isShown: Bool
     
     var body: some View {
-            
             VStack {
-                Text("Modal view 등장")
+                Spacer()
                 Button(action: {
                     presentation.wrappedValue.dismiss()
                 }) {
-                    Text("닫기").bold()
+                    Text("앱 설정").bold()
                 }
                 .frame(width: 150, height: 30, alignment: .center)
-                .background(RoundedRectangle(cornerRadius: 40).fill(Color.orange))
+//                .background(RoundedRectangle(cornerRadius: 40).fill(Color.orange))
                 .font(.system(size: 16))
-                .foregroundColor(Color.white)
+                .foregroundColor(Color.black)
+                
+                Button(action: {
+                    presentation.wrappedValue.dismiss()
+                }) {
+                    Text("이 이야기").bold()
+                }
+                
+                .frame(width: 150, height: 30, alignment: .center)
+//                .background(RoundedRectangle(cornerRadius: 40).fill(Color.orange))
+                .font(.system(size: 16))
+                .foregroundColor(Color.black)
+                
+                Button(action: {
+                    presentation.wrappedValue.dismiss()
+                }) {
+                    Text("모든 이야기").bold()
+                }
+                .frame(width: 150, height: 30, alignment: .center)
+//                .background(RoundedRectangle(cornerRadius: 40).fill(Color.orange))
+                .font(.system(size: 16))
+                .foregroundColor(Color.black)
+                Button(action: {
+                    presentation.wrappedValue.dismiss()
+                }) {
+                    Text("검색").bold()
+                }
+                .frame(width: 150, height: 30, alignment: .center)
+//                .background(RoundedRectangle(cornerRadius: 40).fill(Color.orange))
+                .font(.system(size: 16))
+                .foregroundColor(Color.black)
+                Button(action: {
+                    presentation.wrappedValue.dismiss()
+                }) {
+                    Text("글 추가").bold()
+                }
+                .frame(width: 150, height: 30, alignment: .center)
+//                .background(RoundedRectangle(cornerRadius: 40).fill(Color.orange))
+                .font(.system(size: 16))
+                .foregroundColor(Color.blue)
             }.background(Color.white)
     }
     

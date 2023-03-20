@@ -12,10 +12,9 @@ struct Item {
     let value: String
 }
 
-
 struct ContentView: View {
     let colors: [String] = ["1","2","3","4","5","6","7","8","9"]
-    @State var showModel = false
+    @State var showModel = true
     
     var body: some View {
         
@@ -25,7 +24,10 @@ struct ContentView: View {
                     .foregroundColor(Color.red)
                     .transition(.opacity.animation(.easeIn))
                     .background(Color.orange)
-            } else {
+                addButtonView(showModel: $showModel)
+//                    .animation(, value: <#T##Equatable#>)
+            }
+                else {
                 TitleView()
                 ZStack {
                     ScrollView(showsIndicators: false) {
@@ -43,6 +45,7 @@ struct ContentView: View {
                         }
                     }
                     addButtonView(showModel: $showModel)
+//                        .animation(<#T##animation: Animation?##Animation?#>, value: <#T##Equatable#>)
                 }
             }
         }
