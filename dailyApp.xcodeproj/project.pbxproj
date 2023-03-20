@@ -15,6 +15,7 @@
 		860650A729C5734100123CAC /* dailyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860650A629C5734100123CAC /* dailyAppUITests.swift */; };
 		860650A929C5734100123CAC /* dailyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860650A829C5734100123CAC /* dailyAppUITestsLaunchTests.swift */; };
 		860650B629C708EA00123CAC /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860650B529C708EA00123CAC /* ModalView.swift */; };
+		860650B929C7FC8400123CAC /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860650B829C7FC8400123CAC /* Modifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		860650A629C5734100123CAC /* dailyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailyAppUITests.swift; sourceTree = "<group>"; };
 		860650A829C5734100123CAC /* dailyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		860650B529C708EA00123CAC /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		860650B829C7FC8400123CAC /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		8606508A29C5733F00123CAC /* dailyApp */ = {
 			isa = PBXGroup;
 			children = (
+				860650B729C7FC7400123CAC /* Utils */,
 				8606508B29C5733F00123CAC /* dailyAppApp.swift */,
 				8606508D29C5733F00123CAC /* ContentView.swift */,
 				860650B529C708EA00123CAC /* ModalView.swift */,
@@ -128,6 +131,14 @@
 				860650A829C5734100123CAC /* dailyAppUITestsLaunchTests.swift */,
 			);
 			path = dailyAppUITests;
+			sourceTree = "<group>";
+		};
+		860650B729C7FC7400123CAC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				860650B829C7FC8400123CAC /* Modifier.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				860650B929C7FC8400123CAC /* Modifier.swift in Sources */,
 				860650B629C708EA00123CAC /* ModalView.swift in Sources */,
 				8606508E29C5733F00123CAC /* ContentView.swift in Sources */,
 				8606508C29C5733F00123CAC /* dailyAppApp.swift in Sources */,

@@ -15,30 +15,38 @@ struct Item {
 
 struct ContentView: View {
     let colors: [String] = ["1","2","3","4","5","6","7","8","9"]
+    @State var showModel = false
     
     var body: some View {
+        
         VStack {
-            TitleView()
-            ZStack {
-                ScrollView(showsIndicators: false) {
-                    LazyVStack(pinnedViews: .sectionHeaders) {
-                        ZStack {
-                            VStack {
-                                ForEach(colors, id: \.self) { color in
-                                    CellItemView(color: color)
-                                        .padding(.horizontal, 10)
+            if showModel {
+                ModalView()
+                    .foregroundColor(Color.red)
+                    .transition(.opacity.animation(.easeIn))
+                    .background(Color.orange)
+            } else {
+                TitleView()
+                ZStack {
+                    ScrollView(showsIndicators: false) {
+                        LazyVStack(pinnedViews: .sectionHeaders) {
+                            ZStack {
+                                VStack {
+                                    ForEach(colors, id: \.self) { color in
+                                        CellItemView(color: color)
+                                            .padding(.horizontal, 10)
+                                    }
+                                    .padding(.vertical, 13)
+                                    .padding(.horizontal, 13)
                                 }
-                                .padding(.vertical, 13)
-                                .padding(.horizontal, 13)
                             }
                         }
                     }
+                    addButtonView(showModel: $showModel)
                 }
-                addButtonView()
             }
         }
     }
-    
 }
 
 private struct TitleView: View {
@@ -88,24 +96,23 @@ private struct CellItemView: View {
 }
 
 
-private struct addButtonView: View {
-    @State private var showModel = false
-    fileprivate var body: some View {
+struct addButtonView: View {
+    @Binding var showModel: Bool
+    
+    internal var body: some View {
         VStack {
             Spacer()
             HStack {
                 Spacer()
                 Button(action: {
-                    self.showModel = true
+                    showModel.toggle()
                 }, label: {
                     Text("•••")
                         .font(.system(.title))
                         .frame(width: 77, height: 70)
                         .foregroundColor(Color.white)
                         .padding(.bottom, 7)
-                        .sheet(isPresented: self.$showModel) {
-                            ModalView()
-                        }
+                    
                 })
                 .background(Color.blue)
                 .cornerRadius(38.5)
@@ -114,6 +121,7 @@ private struct addButtonView: View {
                         radius: 3,
                         x: 3,
                         y: 3)
+                
             }
         }
     }
@@ -126,13 +134,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct ModifierOne: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .frame(
-                maxWidth: .infinity,
-                maxHeight: .infinity,
-                alignment: .topLeading
-            )
-    }
-}
