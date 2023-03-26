@@ -14,20 +14,19 @@ struct Item {
 
 struct ContentView: View {
     let colors: [String] = ["1","2","3","4","5","6","7","8","9"]
-    @State var showModel = true
+    @State var showModel = false
     
     var body: some View {
-        
         VStack {
             if showModel {
-                ModalView()
+                ModalView(isShown: $showModel)
                     .foregroundColor(Color.red)
-                    .transition(.opacity.animation(.easeIn))
-                    .background(Color.orange)
-                addButtonView(showModel: $showModel)
-//                    .animation(, value: <#T##Equatable#>)
+                    .transition(.opacity.animation(.easeInOut))
+                //                    .background(Color.orange)
+                //                addButtonView(showModel: $showModel)
+                //                    .animation(, value: <#T##Equatable#>)
             }
-                else {
+            else {
                 TitleView()
                 ZStack {
                     ScrollView(showsIndicators: false) {
@@ -45,12 +44,13 @@ struct ContentView: View {
                         }
                     }
                     addButtonView(showModel: $showModel)
-//                        .animation(<#T##animation: Animation?##Animation?#>, value: <#T##Equatable#>)
+                    //                        .animation(<#T##animation: Animation?##Animation?#>, value: <#T##Equatable#>)
                 }
             }
         }
     }
 }
+
 
 private struct TitleView: View {
     fileprivate var body: some View {
@@ -95,39 +95,6 @@ private struct CellItemView: View {
         .modifier(ModifierOne())
     }
     
-    
-}
-
-
-struct addButtonView: View {
-    @Binding var showModel: Bool
-    
-    internal var body: some View {
-        VStack {
-            Spacer()
-            HStack {
-                Spacer()
-                Button(action: {
-                    showModel.toggle()
-                }, label: {
-                    Text("•••")
-                        .font(.system(.title))
-                        .frame(width: 77, height: 70)
-                        .foregroundColor(Color.white)
-                        .padding(.bottom, 7)
-                    
-                })
-                .background(Color.blue)
-                .cornerRadius(38.5)
-                .padding()
-                .shadow(color: Color.black.opacity(0.3),
-                        radius: 3,
-                        x: 3,
-                        y: 3)
-                
-            }
-        }
-    }
     
 }
 

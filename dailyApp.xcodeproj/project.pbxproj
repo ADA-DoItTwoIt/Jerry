@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8606508C29C5733F00123CAC /* dailyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8606508B29C5733F00123CAC /* dailyAppApp.swift */; };
-		8606508E29C5733F00123CAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8606508D29C5733F00123CAC /* ContentView.swift */; };
 		8606509029C5734000123CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8606508F29C5734000123CAC /* Assets.xcassets */; };
 		8606509329C5734000123CAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8606509229C5734000123CAC /* Preview Assets.xcassets */; };
 		8606509D29C5734100123CAC /* dailyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8606509C29C5734100123CAC /* dailyAppTests.swift */; };
@@ -16,6 +15,8 @@
 		860650A929C5734100123CAC /* dailyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860650A829C5734100123CAC /* dailyAppUITestsLaunchTests.swift */; };
 		860650B629C708EA00123CAC /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860650B529C708EA00123CAC /* ModalView.swift */; };
 		860650B929C7FC8400123CAC /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860650B829C7FC8400123CAC /* Modifier.swift */; };
+		860650F129D01B4100123CAC /* MainButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860650F029D01B4100123CAC /* MainButtonView.swift */; };
+		860650F329D01DAC00123CAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860650F229D01DAC00123CAC /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 /* Begin PBXFileReference section */
 		8606508829C5733F00123CAC /* dailyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dailyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8606508B29C5733F00123CAC /* dailyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailyAppApp.swift; sourceTree = "<group>"; };
-		8606508D29C5733F00123CAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8606508F29C5734000123CAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8606509229C5734000123CAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8606509829C5734100123CAC /* dailyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dailyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +48,8 @@
 		860650A829C5734100123CAC /* dailyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		860650B529C708EA00123CAC /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		860650B829C7FC8400123CAC /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
+		860650F029D01B4100123CAC /* MainButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonView.swift; sourceTree = "<group>"; };
+		860650F229D01DAC00123CAC /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +102,9 @@
 			children = (
 				860650B729C7FC7400123CAC /* Utils */,
 				8606508B29C5733F00123CAC /* dailyAppApp.swift */,
-				8606508D29C5733F00123CAC /* ContentView.swift */,
 				860650B529C708EA00123CAC /* ModalView.swift */,
+				860650F229D01DAC00123CAC /* ContentView.swift */,
+				860650F029D01B4100123CAC /* MainButtonView.swift */,
 				8606508F29C5734000123CAC /* Assets.xcassets */,
 				8606509129C5734000123CAC /* Preview Content */,
 			);
@@ -272,8 +275,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				860650B929C7FC8400123CAC /* Modifier.swift in Sources */,
+				860650F329D01DAC00123CAC /* ContentView.swift in Sources */,
+				860650F129D01B4100123CAC /* MainButtonView.swift in Sources */,
 				860650B629C708EA00123CAC /* ModalView.swift in Sources */,
-				8606508E29C5733F00123CAC /* ContentView.swift in Sources */,
 				8606508C29C5733F00123CAC /* dailyAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
