@@ -12,8 +12,21 @@ struct ModifierOne: ViewModifier {
         content
             .frame(
                 maxWidth: .infinity,
-                maxHeight: .infinity,
+//                maxHeight: .infinity,
                 alignment: .topLeading
             )
     }
 }
+
+var dateFormatter: DateFormatter {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .long
+    formatter.timeStyle = .medium
+    return formatter
+}
+
+
+class StoryData: ObservableObject {
+    @Published var story: Story = Story(mainTitle: "", mainDetail: "", list: [])
+}
+

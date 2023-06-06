@@ -7,17 +7,19 @@
 
 import SwiftUI
 
-struct ModalView: View {
+struct StorySettingView: View {
+    @EnvironmentObject var stories: Stories
     
-    @Environment(\.presentationMode) var presentation
+    @Binding var isMainView: Bool
+    @Binding var selection: Int
     
-    @Binding var isShown: Bool
+    @State private var isShowAddst = false
     
     var body: some View {
         VStack {
 //            Spacer()
             Button(action: {
-                presentation.wrappedValue.dismiss()
+//                presentation.wrappedValue.dismiss()
             }) {
                 Text("앱 설정").bold()
             }
@@ -28,7 +30,7 @@ struct ModalView: View {
             .padding(.vertical, 10)
             
             Button(action: {
-                presentation.wrappedValue.dismiss()
+//                presentation.wrappedValue.dismiss()
             }) {
                 Text("이 이야기").bold()
             }
@@ -43,7 +45,7 @@ struct ModalView: View {
                 .frame(width: 150, height: 30, alignment: .center)
             
             Button(action: {
-                presentation.wrappedValue.dismiss()
+//                presentation.wrappedValue.dismiss()
             }) {
                 Text("모든 이야기").bold()
             }
@@ -58,7 +60,7 @@ struct ModalView: View {
                 .frame(width: 150, height: 30, alignment: .center)
             
             Button(action: {
-                presentation.wrappedValue.dismiss()
+//                presentation.wrappedValue.dismiss()
             }) {
                 Text("검색").bold()
             }
@@ -69,7 +71,7 @@ struct ModalView: View {
             .padding(.vertical,15)
             
             Button(action: {
-                presentation.wrappedValue.dismiss()
+                isShowAddst = true
             }) {
                 Text("글 추가").bold()
             }
@@ -79,9 +81,13 @@ struct ModalView: View {
             .foregroundColor(Color.purple)
             .padding(.vertical, 15)
             
-        }.background(Color.white)
-            .padding(.vertical, 120)
-        addButtonView(showModel: $isShown)
+        }
+        .fullScreenCover(isPresented: $isShowAddst, content: {
+            NewDailyView(show: $isShowAddst, myStory: $stories.stories[selection].list)
+        })
+        .background(Color.white)
+        .padding(.vertical, 120)
+        //        addButtonView(showModel: $isShown)
     }
     
     

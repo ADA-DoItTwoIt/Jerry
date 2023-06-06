@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct dailyAppApp: App {
+    @StateObject var stories = Stories()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
+                .environmentObject(stories)
         }
     }
 }
