@@ -24,32 +24,26 @@ struct MainButtonView: View {
             HStack {
                 Spacer()
                 Button(action: {
-                    withAnimation {
+                    withAnimation(Animation.linear(duration: 0.6)) {
                         showModel.toggle()
                     }
 //                    print("DEBUG: btn select =\(showModel)")
                 }, label: {
                     Text(btnTitle)
-                        .font(.system(.title))
-                        .frame(width: 77, height: 70)
-                        .foregroundColor(Color.black)
-                        .padding(.bottom, 7)
-                        .rotationEffect(Angle(degrees: showModel ? rotationAngle: rotationAngle + 45))
-                        .animation(.easeIn)
+                        .font(showModel ? .title:.none)
+                        .rotationEffect(Angle(degrees: showModel ? rotationAngle+45:rotationAngle))
+                        .background(Circle()
+                            .stroke(lineWidth: showModel ? 0:2)
+                            .frame(width: 50,height: 50))
+//                        .animation(.easeIn)
                     
                 })
+                .foregroundColor(showModel ? .black:.gray)
+                .opacity(0.4)
+                .frame(width: 50, height: 50)
                 .background(Color.white)
-                .cornerRadius(38.5)
-                .padding()
-                .shadow(color: Color.black.opacity(showModel ? 0 : 0.3),
-                        radius: 3,
-                        x: 3,
-                        y: 3)
-                .onAppear() {
-                    withAnimation(Animation.linear(duration: 1.0).repeatForever(autoreverses: false)) {
-                        self.rotationAngle += showModel ? 45 : -45
-                                }
-                }
+                .cornerRadius(25)
+                .padding([.trailing,.bottom],25)
             }
         }
     }

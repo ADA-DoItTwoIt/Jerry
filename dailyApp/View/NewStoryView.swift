@@ -25,6 +25,7 @@ struct NewStoryView: View {
                     CreateStoryOne(showModal: $showModal)
                 })
             Text("+를 눌러서 새 이야기를 시작하세요")
+                .font(.custom(mylight, size: 18))
                 .foregroundColor(.gray)
         }
 

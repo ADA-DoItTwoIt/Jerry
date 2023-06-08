@@ -20,7 +20,7 @@ struct ModifierOne: ViewModifier {
 
 var dateFormatter: DateFormatter {
     let formatter = DateFormatter()
-    formatter.dateStyle = .long
+    formatter.dateStyle = .medium
     formatter.timeStyle = .medium
     return formatter
 }
@@ -29,4 +29,8 @@ var dateFormatter: DateFormatter {
 class StoryData: ObservableObject {
     @Published var story: Story = Story(mainTitle: "", mainDetail: "", list: [])
 }
+
+let mylight = "KimjungchulMyungjo-Light"
+let myregular = "KimjungchulMyungjo-Regular"
+let mybold = "KimjungchulMyungjo-Bold"
 

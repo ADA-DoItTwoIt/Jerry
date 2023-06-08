@@ -20,21 +20,23 @@ struct MainTabView: View {
                 MainButtonView(showModel: $showBtnView)
             }
         } else {
-            TabView(selection: $selection) {
-                ForEach(stories.stories.indices, id: \.self) { index in
-                    MainView(myStory: $stories.stories[index])
-                        .tag(index)
+            NavigationStack {
+                TabView(selection: $selection) {
+                    ForEach(stories.stories.indices, id: \.self) { index in
+                        MainView(myStory: $stories.stories[index])
+                            .tag(index)
+                    }
+                    NewStoryView()
+                        .tag(stories.stories.count)
                 }
-                NewStoryView()
-                    .tag(stories.stories.count)
+                .tabViewStyle(.page)
+                .overlay {
+                    MainButtonView(showModel: $showBtnView)
+                }
             }
-            .tabViewStyle(.page)
             .onChange(of: stories.stories.count, perform: { newValue in
                 selection = 0
             })
-            .overlay {
-                MainButtonView(showModel: $showBtnView)
-            } // overlay AddMainBtn
         }
             
     }

@@ -31,8 +31,7 @@ struct NewDailyView: View {
                 Text("취소")
                     .foregroundColor(Color.gray)
             }), trailing: Button(action: {
-                let date = dateFormatter.string(from: Date())
-                let daily = Daily(title: title, date: date, detail: detail)
+                let daily = Daily(title: title, date: Date(), detail: detail)
                 print("DEBUG: new Daily = \(daily)")
                 myStory.append(daily)
                 print("DEBUG: append = \(myStory)")

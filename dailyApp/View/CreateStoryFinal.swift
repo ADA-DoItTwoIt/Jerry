@@ -19,8 +19,10 @@ struct CreateStoryFinal: View {
             VStack {
 
                 Text("이야기의 소제목을 입력해주세요.")
+                    .font(.custom(myregular, size: 16))
                     .padding(.vertical,3)
                 Text("다짐말을 써도 좋아요.")
+                    .font(.custom(myregular, size: 16))
                 TextField("예) 오늘도 수고했어!", text: $inputText)
                     .multilineTextAlignment(.center)
                     .padding(.vertical, 12)

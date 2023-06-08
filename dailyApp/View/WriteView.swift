@@ -10,11 +10,11 @@ import SwiftUI
 struct WriteView: View {
     var detail: String
     var title: String
-    var date: String
+    var date: Date
     
     @State var showModal = false
     
-    init(detail: String, title: String, date: String) {
+    init(detail: String, title: String, date: Date) {
         self.date = date
         self.title = title
         self.detail = detail
@@ -33,7 +33,7 @@ struct WriteView: View {
                 .sheet(isPresented: $showModal) {
                     DailyEditView(title: title, detail: detail)
                 }
-            Text(date)
+            Text(dateFormatter.string(from: date))
                 .font(.title2)
                 .padding([.vertical,.leading], 13)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -79,6 +79,6 @@ struct WriteView: View {
 
 struct WriteView_Previews: PreviewProvider {
     static var previews: some View {
-        WriteView(detail: "@@", title: "@@", date: "2")
+        WriteView(detail: "@@", title: "@@", date: Date())
     }
 }

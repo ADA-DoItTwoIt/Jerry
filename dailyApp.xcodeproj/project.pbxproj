@@ -21,6 +21,18 @@
 		8611709D29D5A0F000C409CA /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8611709C29D5A0F000C409CA /* WriteView.swift */; };
 		8611709F29DBFE9200C409CA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8611709E29DBFE9200C409CA /* MainView.swift */; };
 		861170A129DC086500C409CA /* StoryEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861170A029DC086500C409CA /* StoryEditView.swift */; };
+		86243CBD2A2F7EA70020D8A5 /* KimjungchulMyungjo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86243CBC2A2F7EA70020D8A5 /* KimjungchulMyungjo-Light.ttf */; };
+		86243CBE2A2F7EA70020D8A5 /* KimjungchulMyungjo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86243CBC2A2F7EA70020D8A5 /* KimjungchulMyungjo-Light.ttf */; };
+		86243CBF2A2F7EA70020D8A5 /* KimjungchulMyungjo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86243CBC2A2F7EA70020D8A5 /* KimjungchulMyungjo-Light.ttf */; };
+		86243CC22A2F817B0020D8A5 /* KimjungchulMyungjo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86243CC12A2F817B0020D8A5 /* KimjungchulMyungjo-Bold.ttf */; };
+		86243CC32A2F817B0020D8A5 /* KimjungchulMyungjo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86243CC12A2F817B0020D8A5 /* KimjungchulMyungjo-Bold.ttf */; };
+		86243CC42A2F817B0020D8A5 /* KimjungchulMyungjo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86243CC12A2F817B0020D8A5 /* KimjungchulMyungjo-Bold.ttf */; };
+		86243CC62A2F81880020D8A5 /* KimjungchulMyungjo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86243CC52A2F81880020D8A5 /* KimjungchulMyungjo-Regular.ttf */; };
+		86243CC72A2F81880020D8A5 /* KimjungchulMyungjo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86243CC52A2F81880020D8A5 /* KimjungchulMyungjo-Regular.ttf */; };
+		86243CC82A2F81880020D8A5 /* KimjungchulMyungjo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86243CC52A2F81880020D8A5 /* KimjungchulMyungjo-Regular.ttf */; };
+		86243CCA2A2F844D0020D8A5 /* StoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86243CC92A2F844D0020D8A5 /* StoryCollectionView.swift */; };
+		86243CCB2A2F844D0020D8A5 /* StoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86243CC92A2F844D0020D8A5 /* StoryCollectionView.swift */; };
+		86243CCC2A2F844D0020D8A5 /* StoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86243CC92A2F844D0020D8A5 /* StoryCollectionView.swift */; };
 		863E794A29F3D6B4007DFAFD /* NewDailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863E794929F3D6B4007DFAFD /* NewDailyView.swift */; };
 		86646F8C29E1705100B40E0D /* NewStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86646F8B29E1705100B40E0D /* NewStoryView.swift */; };
 		86646F8E29E6732600B40E0D /* DailyEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86646F8D29E6732600B40E0D /* DailyEditView.swift */; };
@@ -67,6 +79,11 @@
 		8611709C29D5A0F000C409CA /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 		8611709E29DBFE9200C409CA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		861170A029DC086500C409CA /* StoryEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryEditView.swift; sourceTree = "<group>"; };
+		86243CBC2A2F7EA70020D8A5 /* KimjungchulMyungjo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KimjungchulMyungjo-Light.ttf"; sourceTree = "<group>"; };
+		86243CC02A2F7FE70020D8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		86243CC12A2F817B0020D8A5 /* KimjungchulMyungjo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KimjungchulMyungjo-Bold.ttf"; sourceTree = "<group>"; };
+		86243CC52A2F81880020D8A5 /* KimjungchulMyungjo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KimjungchulMyungjo-Regular.ttf"; sourceTree = "<group>"; };
+		86243CC92A2F844D0020D8A5 /* StoryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionView.swift; sourceTree = "<group>"; };
 		863E794929F3D6B4007DFAFD /* NewDailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDailyView.swift; sourceTree = "<group>"; };
 		86646F8B29E1705100B40E0D /* NewStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStoryView.swift; sourceTree = "<group>"; };
 		86646F8D29E6732600B40E0D /* DailyEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyEditView.swift; sourceTree = "<group>"; };
@@ -126,6 +143,8 @@
 		8606508A29C5733F00123CAC /* dailyApp */ = {
 			isa = PBXGroup;
 			children = (
+				86243CC02A2F7FE70020D8A5 /* Info.plist */,
+				86243CB92A2F7E600020D8A5 /* Fonts */,
 				8606508B29C5733F00123CAC /* dailyAppApp.swift */,
 				860650F429D02CD000123CAC /* View */,
 				860650F729D02D6900123CAC /* Model */,
@@ -185,6 +204,7 @@
 				86646F8F29E68BA500B40E0D /* CreateStoryOne.swift */,
 				863E794929F3D6B4007DFAFD /* NewDailyView.swift */,
 				86646F9129EA8FE300B40E0D /* CreateStoryFinal.swift */,
+				86243CC92A2F844D0020D8A5 /* StoryCollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +215,16 @@
 				860650F529D02D2300123CAC /* Daily.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		86243CB92A2F7E600020D8A5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				86243CC12A2F817B0020D8A5 /* KimjungchulMyungjo-Bold.ttf */,
+				86243CBC2A2F7EA70020D8A5 /* KimjungchulMyungjo-Light.ttf */,
+				86243CC52A2F81880020D8A5 /* KimjungchulMyungjo-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +339,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8606509329C5734000123CAC /* Preview Assets.xcassets in Resources */,
+				86243CBD2A2F7EA70020D8A5 /* KimjungchulMyungjo-Light.ttf in Resources */,
 				8606509029C5734000123CAC /* Assets.xcassets in Resources */,
+				86243CC22A2F817B0020D8A5 /* KimjungchulMyungjo-Bold.ttf in Resources */,
+				86243CC62A2F81880020D8A5 /* KimjungchulMyungjo-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +350,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86243CBE2A2F7EA70020D8A5 /* KimjungchulMyungjo-Light.ttf in Resources */,
+				86243CC72A2F81880020D8A5 /* KimjungchulMyungjo-Regular.ttf in Resources */,
+				86243CC32A2F817B0020D8A5 /* KimjungchulMyungjo-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +360,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86243CBF2A2F7EA70020D8A5 /* KimjungchulMyungjo-Light.ttf in Resources */,
+				86243CC82A2F81880020D8A5 /* KimjungchulMyungjo-Regular.ttf in Resources */,
+				86243CC42A2F817B0020D8A5 /* KimjungchulMyungjo-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +380,7 @@
 				860650F329D01DAC00123CAC /* MainTabView.swift in Sources */,
 				86646F8E29E6732600B40E0D /* DailyEditView.swift in Sources */,
 				86646F8C29E1705100B40E0D /* NewStoryView.swift in Sources */,
+				86243CCA2A2F844D0020D8A5 /* StoryCollectionView.swift in Sources */,
 				86B067EC2A0288EC00C2F54E /* Extension.swift in Sources */,
 				86646F9229EA8FE300B40E0D /* CreateStoryFinal.swift in Sources */,
 				861170A129DC086500C409CA /* StoryEditView.swift in Sources */,
@@ -358,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8606509D29C5734100123CAC /* dailyAppTests.swift in Sources */,
+				86243CCB2A2F844D0020D8A5 /* StoryCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				860650A929C5734100123CAC /* dailyAppUITestsLaunchTests.swift in Sources */,
+				86243CCC2A2F844D0020D8A5 /* StoryCollectionView.swift in Sources */,
 				860650A729C5734100123CAC /* dailyAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +553,7 @@
 				DEVELOPMENT_TEAM = TK8FVHX9VB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = dailyApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -543,6 +586,7 @@
 				DEVELOPMENT_TEAM = TK8FVHX9VB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = dailyApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

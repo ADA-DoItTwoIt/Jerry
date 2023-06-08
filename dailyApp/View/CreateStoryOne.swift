@@ -19,8 +19,10 @@ struct CreateStoryOne: View {
             VStack {
 
                 Text("새 이야기를 추가합니다.")
+                    .font(.custom(myregular, size: 16))
                     .padding(.vertical,3)
                 Text("이야기의 제목을 입력해주세요.")
+                    .font(.custom(myregular, size: 16))
                 TextField("예) 일기, 일상을 끄적이다", text: $inputText)
                     .multilineTextAlignment(.center)
                     .padding(.vertical, 12)
